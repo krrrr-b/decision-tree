@@ -9,6 +9,7 @@
 아래는 결정 트리를 도식화한 것입니다.
 
 ![img1](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FwlH1u%2FbtqwWZI9Xen%2FkFJDjGSFJAPxhyatC3Xhs0%2Fimg.png)
+
 출처: 텐서 플로우 블로그
 
 이렇게 특정 기준(질문)에 따라 데이터를 구분하는 모델을 결정 트리 모델이라고 합니다. 
@@ -18,6 +19,7 @@
 맨 처음 분류 기준 (즉, 첫 질문)을 Root Node라고 하고, 맨 마지막 노드를 Terminal Node 혹은 Leaf Node라고 합니다.
 
 ![img2](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F96F6N%2FbtqwVglgV2S%2FYTCytd7Z2egbnbJM29MJv1%2Fimg.png)
+
 출처: ratsgo's blog
 
 전체적인 모양이 나무를 뒤짚어 높은 것과 같아서 이름이 Decision Tree입니다.
@@ -26,14 +28,17 @@
 결정 트리 알고리즘의 프로세스를 간단히 알아보겠습니다.
 
 ![img3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGlghI%2FbtqwYFXZzCu%2F0g4cMFuumUkKDYmDfkMdu0%2Fimg.png)
+
 출처: 텐서 플로우 블로그
 먼저 위와 같이 데이터를 가장 잘 구분할 수 있는 질문을 기준으로 나눕니다. 
 
 ![img4](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbJSlvg%2FbtqwXHvdrPJ%2FZhikSUKx3SmuYZSz6NGZL1%2Fimg.png)
+
 출처: 텐서 플로우 블로그
 나뉜 각 범주에서 또 다시 데이터를 가장 잘 구분할 수 있는 질문을 기준으로 나눕니다. 이를 지나치게 많이 하면 아래와 같이 오버피팅이 됩니다. 결정 트리에 아무 파라미터를 주지 않고 모델링하면 오버피팅이 됩니다. 
 
 ![img5](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbUvjhU%2FbtqwYiIK85s%2FoQ3KuTZVk6CgSAQI0VkwW1%2Fimg.png)
+
 출처: 텐서 플로우 블로그
 
 가지치기(Pruning)
@@ -47,6 +52,7 @@
 반면 아래쪽 범주는 5개는 파란점, 3개는 빨간점으로 서로 다른 데이터가 많이 섞여 있어 불순도가 높습니다.
 
 ![img6](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqLXhZ%2FbtqwWyZl6iV%2FUZnQbf9L5HAFzf6hFfxK71%2Fimg.png)
+
 출처: ratsgo's blog
 
 한 범주에 하나의 데이터만 있다면 불순도가 최소(혹은 순도가 최대)이고, 한 범주 안에 서로 다른 두 데이터가 정확히 반반 있다면 불순도가 최대(혹은 순도가 최소)입니다. 
@@ -61,6 +67,7 @@
 한 범주 안에 하나의 데이터만 있다는 뜻입니다. 엔트로피를 구하는 공식은 아래와 같습니다.
 
 ![img7](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpL6pO%2FbtqwVDN1V94%2FTYgn5iFrPTfgdVwZhxVKl1%2Fimg.png)
+
 엔트로피 공식
 (Pi = 한 영역 안에 존재하는 데이터 가운데 범주 i에 속하는 데이터의 비율)
 
