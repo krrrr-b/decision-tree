@@ -71,4 +71,7 @@
 엔트로피 공식
 (Pi = 한 영역 안에 존재하는 데이터 가운데 범주 i에 속하는 데이터의 비율)
 
-참고: https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-4-%EA%B2%B0%EC%A0%95-%ED%8A%B8%EB%A6%ACDecision-Tree?category=1057680
+참고:
+- https://www.youtube.com/watch?v=xki7zQDf74I
+- https://www.youtube.com/watch?v=2Rd4AqmLjfU
+- https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-4-%EA%B2%B0%EC%A0%95-%ED%8A%B8%EB%A6%ACDecision-Tree?category=1057680
